@@ -24,7 +24,6 @@ public enum Direction {
             }
         }
         return null;
-//        throw new UnsupportedOperationException();
     }
 
     public static Direction closestToDegrees(int degrees) {
@@ -38,7 +37,6 @@ public enum Direction {
         if (degrees < 292) return W;
         if (degrees < 337) return NW;
         return N;
-//        throw new UnsupportedOperationException();
     }
 
     public Direction opposite() {
@@ -53,12 +51,10 @@ public enum Direction {
             case NW: return SE;
         }
         return null;
-//        throw new UnsupportedOperationException();
     }
 
     public int differenceDegreesTo(Direction direction) {
         int difference = Math.abs(this.degrees - direction.degrees);
         return Math.min(difference, 360 - difference);
-//        throw new UnsupportedOperationException();
     }
 }
